@@ -5,5 +5,3 @@ services:
     tty: true
     volumes:
       - ./src:/src
-    ports:
-      - 5001:5001
