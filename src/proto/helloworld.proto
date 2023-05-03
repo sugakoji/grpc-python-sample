@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package helloworld;
+
+// エンドポイント定義
+service HelloWorldService {
+  rpc SayHello (HelloWorldRequest) returns (HelloWorldResponse);
+}
+
+// 型定義
+message HelloWorldRequest {
+  string name = 1;
+}
+
+message HelloWorldResponse {
+    string message = 1;
+}
