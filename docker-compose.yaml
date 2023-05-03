@@ -1,0 +1,9 @@
+version: '3'
+services: 
+  grpc-demo:
+    build: .
+    tty: true
+    volumes:
+      - ./src:/src
+    ports:
+      - 5001:5001
