@@ -9,7 +9,6 @@ service HelloWorldService {
 
 // 型定義
 message HelloWorldRequest {
-  string name = 1;
 }
 
 message HelloWorldResponse {
