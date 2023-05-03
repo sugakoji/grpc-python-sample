@@ -5,7 +5,7 @@ from pb import helloworld_pb2_grpc
 
 # レスポンスの処理
 class Greeter(helloworld_pb2_grpc.HelloWorldServiceServicer):
-    def SayHello(self):
+    def SayHello(self, request, context):
         return helloworld_pb2.HelloWorldResponse(message="hello world")
     
 # サーバー起動処理
